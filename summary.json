@@ -1,0 +1,167 @@
+{
+  "n_trees": 50,
+  "n_visits": 9,
+  "n_rows": 450,
+  "residue_freq": {
+    "M": 0.404,
+    "H": 0.329,
+    "L": 0.222,
+    "S": 0.044
+  },
+  "upgma_silhouette": {
+    "2": 0.341,
+    "3": 0.351,
+    "4": 0.309,
+    "5": 0.333,
+    "6": 0.406
+  },
+  "n_clades": 6,
+  "example_alignment": {
+    "pair": [
+      "P01",
+      "P03"
+    ],
+    "A": "HHLHHHLLL",
+    "B": "SSMMMMMMS",
+    "score": -11.0
+  },
+  "markov_chi2_p": 5.522901494546801e-07,
+  "pest_persistence_fisher_p": 0.851622703669243,
+  "hmm_bic": {
+    "2": 1084.6,
+    "3": 1115.7,
+    "4": 1168.9
+  },
+  "hmm_states": 2,
+  "hmm_top_state_trees": 10,
+  "hmm_top_state_coastal_fisher": {
+    "table": [
+      [
+        29,
+        3
+      ],
+      [
+        11,
+        7
+      ]
+    ],
+    "OR_p": [
+      6.151515151515151,
+      0.02391512787469617
+    ]
+  },
+  "wgcna_beta": 3,
+  "ewas_sig_q05": [
+    {
+      "outcome": "StressIdx",
+      "exposure": "SoilEC",
+      "estimate": 0.2971,
+      "q_BH": 0.0376
+    },
+    {
+      "outcome": "StressIdx",
+      "exposure": "MoistOrd",
+      "estimate": -0.324,
+      "q_BH": 0.0033
+    },
+    {
+      "outcome": "StressIdx",
+      "exposure": "Rain2m",
+      "estimate": -0.567,
+      "q_BH": 0.0
+    },
+    {
+      "outcome": "StressIdx",
+      "exposure": "TempC",
+      "estimate": 0.5143,
+      "q_BH": 0.0
+    },
+    {
+      "outcome": "StressIdx",
+      "exposure": "RH",
+      "estimate": -0.5626,
+      "q_BH": 0.0
+    },
+    {
+      "outcome": "StressIdx",
+      "exposure": "SaltOrd",
+      "estimate": 0.6383,
+      "q_BH": 0.0003
+    },
+    {
+      "outcome": "StressIdx",
+      "exposure": "CoastDist_m",
+      "estimate": -0.5153,
+      "q_BH": 0.0098
+    },
+    {
+      "outcome": "PoorCanopy",
+      "exposure": "Rain2m",
+      "estimate": 0.5474,
+      "q_BH": 0.0
+    },
+    {
+      "outcome": "PoorCanopy",
+      "exposure": "TempC",
+      "estimate": 1.4788,
+      "q_BH": 0.0001
+    },
+    {
+      "outcome": "PoorCanopy",
+      "exposure": "RH",
+      "estimate": 0.5917,
+      "q_BH": 0.0
+    },
+    {
+      "outcome": "PoorCanopy",
+      "exposure": "SaltOrd",
+      "estimate": 2.0535,
+      "q_BH": 0.0067
+    },
+    {
+      "outcome": "PoorCanopy",
+      "exposure": "CoastDist_m",
+      "estimate": 0.549,
+      "q_BH": 0.0086
+    }
+  ],
+  "limma_prior": {
+    "d0": "inf",
+    "s0^2": 0.951530634818278
+  },
+  "forecast": {
+    "next_Pest|LR_full": {
+      "AUROC": 0.505,
+      "AUROC_sd": 0.035
+    },
+    "next_Pest|RF_full": {
+      "AUROC": 0.537,
+      "AUROC_sd": 0.016
+    },
+    "next_Pest|persistence": {
+      "AUROC": 0.49,
+      "AUROC_sd": 0.0
+    },
+    "next_Pest|site_only": {
+      "AUROC": 0.465,
+      "AUROC_sd": 0.029
+    },
+    "next_Poor|LR_full": {
+      "AUROC": 0.701,
+      "AUROC_sd": 0.012
+    },
+    "next_Poor|RF_full": {
+      "AUROC": 0.711,
+      "AUROC_sd": 0.007
+    },
+    "next_Poor|persistence": {
+      "AUROC": 0.64,
+      "AUROC_sd": 0.0
+    },
+    "next_Poor|site_only": {
+      "AUROC": 0.605,
+      "AUROC_sd": 0.022
+    }
+  },
+  "forecast_note": "AUROC averaged over 5 repeats of tree-grouped 5-fold CV"
+}
